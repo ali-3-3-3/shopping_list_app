@@ -28,7 +28,7 @@ class _ShoppingListState extends State<ShoppingList> {
 
   void _loadItems() async {
     final url = Uri.https(
-        'shopping-list-app-6ed53-default-rtdb.asia-southeast1.firebasedatabase.app/',
+        'shopping-list-app-6ed53-default-rtdb.asia-southeast1.firebasedatabase.app',
         'shopping-list.json');
     try {
       final response = await http.get(url);
@@ -103,7 +103,7 @@ class _ShoppingListState extends State<ShoppingList> {
     });
 
     final url = Uri.https(
-        'shopping-list-app-6ed53-default-rtdb.asia-southeast1.firebasedatabase.app/',
+        'shopping-list-app-6ed53-default-rtdb.asia-southeast1.firebasedatabase.app',
         'shopping-list/${item.id}.json');
 
     final response = await http.delete(url);

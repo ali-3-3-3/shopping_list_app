@@ -28,7 +28,7 @@ class _NewItemState extends State<NewItem> {
         _isSending = true;
       });
       final url = Uri.https(
-          'shopping-list-app-6ed53-default-rtdb.asia-southeast1.firebasedatabase.app/',
+          'shopping-list-app-6ed53-default-rtdb.asia-southeast1.firebasedatabase.app',
           'shopping-list.json');
       final response = await http.post(
         url,
